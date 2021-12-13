@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = 'lqss/jenkins'
+    registry = 'hohioh/demo3'
     registryCredential = 'dockerHub'
     dockerImage = ''
   }
@@ -21,7 +21,7 @@ pipeline {
     stage('GIT Clone') {
       steps {
         echo 'Getting Project from Git'
-        git branch: "devops-cicd", url: 'https://github.com/LQss11/devops-pipeline.git'
+        git branch: "devops-cicd", url: 'https://github.com/nadernext/devops-pipeline.git'
       }
     }
     stage('MVN CLEAN') {
