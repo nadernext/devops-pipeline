@@ -21,7 +21,7 @@ pipeline {
     stage('Git') {
       steps {
         echo 'Cloning'
-        git branch: 'spring-for-jenkins-with-docker', url: 'https://github.com/LQss11/devops-pipeline.git'
+        git branch: 'spring-for-jenkins-with-docker', url: 'https://github.com/nadernext/devops-pipeline.git'
       }
     }
     stage('MVN CLEAN') {
