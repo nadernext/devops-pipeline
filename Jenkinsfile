@@ -64,15 +64,15 @@ pipeline {
     stage('Deploy image to Docker Hub') {
       steps {
         script {
-          docker.withRegistry('', registryCredential) {
-            dockerImage.push()
+         // docker.withRegistry('', registryCredential) {
+         //   dockerImage.push()
           }
         }
       }
     }
     stage('Cleaning up Docker Image') {
       steps {
-        sh "docker rmi $registry:$BUILD_NUMBER"
+        // sh "docker rmi $registry:$BUILD_NUMBER"
       }
     }
   }
