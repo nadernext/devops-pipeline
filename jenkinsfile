@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = 'lqss/jenkins'
+    registry = 'hohioh/demo3'
     registryCredential = 'dockerHub'
     dockerImage = ''
   }
